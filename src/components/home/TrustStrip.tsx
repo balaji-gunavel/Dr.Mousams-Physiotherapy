@@ -1,23 +1,67 @@
-import { Star, Award, GraduationCap, Clock, Shield, BadgeCheck } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
-const items = [
-  { icon: Star, label: "4.9★ Google Rating", color: "text-warm" },
-  { icon: Award, label: "234+ Reviews", color: "text-primary" },
-  { icon: Clock, label: "14+ Years Experience", color: "text-primary" },
-  { icon: GraduationCap, label: "Master's in Physiotherapy", color: "text-primary" },
-  { icon: Shield, label: "Ortho Rehab Specialist", color: "text-primary" },
-  { icon: BadgeCheck, label: "Certified Ergonomist", color: "text-primary" },
+type Metric = {
+  value: number;
+  suffix: string;
+  label: string;
+  format?: (n: number) => string;
+};
+
+const metrics: Metric[] = [
+  { value: 16, suffix: "+", label: "Years of Experience" },
+  { value: 2000, suffix: "+", label: "Patients Served", format: (n) => n.toLocaleString() },
+  { value: 10000, suffix: "+", label: "Physio Sessions", format: (n) => n.toLocaleString() },
 ];
+
+const CountUp = ({ target, duration = 2000, format }: { target: number; duration?: number; format?: (n: number) => string }) => {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const started = useRef(false);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !started.current) {
+            started.current = true;
+            const start = performance.now();
+            const tick = (now: number) => {
+              const progress = Math.min((now - start) / duration, 1);
+              const eased = 1 - Math.pow(1 - progress, 3);
+              setCount(Math.floor(eased * target));
+              if (progress < 1) requestAnimationFrame(tick);
+              else setCount(target);
+            };
+            requestAnimationFrame(tick);
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [target, duration]);
+
+  return <span ref={ref}>{format ? format(count) : count}</span>;
+};
 
 const TrustStrip = () => {
   return (
-    <section className="bg-trust py-6 md:py-8 border-y border-border">
-      <div className="container-narrow px-4 md:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
-          {items.map((item) => (
-            <div key={item.label} className="flex items-center gap-2 justify-center text-center">
-              <item.icon className={`w-5 h-5 shrink-0 ${item.color}`} />
-              <span className="text-xs md:text-sm font-medium text-foreground">{item.label}</span>
+    <section className="section-padding bg-secondary/30">
+      <div className="container-narrow">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+          {metrics.map((m) => (
+            <div
+              key={m.label}
+              className="bg-card rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-border p-8 md:p-10 text-center"
+            >
+              <div className="font-heading text-5xl md:text-6xl font-bold text-primary mb-3">
+                <CountUp target={m.value} format={m.format} />
+                {m.suffix}
+              </div>
+              <p className="text-base md:text-lg text-muted-foreground font-medium">{m.label}</p>
             </div>
           ))}
         </div>
