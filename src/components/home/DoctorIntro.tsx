@@ -1,4 +1,4 @@
-import { Award, GraduationCap, Shield, BadgeCheck } from "lucide-react";
+import { Star, MessageSquare, GraduationCap, Shield, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -21,12 +21,13 @@ const DoctorIntro = () => {
             <p className="text-muted-foreground leading-relaxed mb-6">
               Dr. Mousam S. Panchamia is a senior physiotherapist with 16+ years of expertise in orthopaedic rehabilitation, pain management, and ergonomics. As founder of Dr. Mousam’s Physiotherapy Clinic in Bangalore, she provides evidence-based care for musculoskeletal, neurological, and cardiopulmonary conditions, combining advanced clinical expertise, leadership experience, and specialized training in Orthopaedics and Mulligan Therapy.
             </p>
-            <div className="grid grid-cols-2 gap-3 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-6">
               {[
+                { icon: Star, text: "4.9 Google Rating" },
+                { icon: MessageSquare, text: "234+ Reviews" },
                 { icon: GraduationCap, text: "Master's in Physiotherapy" },
                 { icon: Shield, text: "Ortho Rehab Specialist" },
                 { icon: BadgeCheck, text: "Certified Ergonomist" },
-                { icon: Award, text: "14+ Years Experience" },
               ].map((item) => (
                 <div key={item.text} className="flex items-center gap-2 text-sm text-foreground">
                   <item.icon className="w-4 h-4 text-primary shrink-0" />
