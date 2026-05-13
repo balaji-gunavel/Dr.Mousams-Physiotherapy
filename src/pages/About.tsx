@@ -48,13 +48,13 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Dr. Mousam Panchamia holds a Master's degree in Physiotherapy with specialization in orthopedic rehabilitation. With over 14 years of hands-on clinical experience, Dr. Mousam has helped thousands of patients recover from injuries, manage chronic pain, and regain their mobility.
+                    Dr. Mousam S. Panchamia is a highly experienced physiotherapist with over 14 years of clinical and leadership expertise in orthopaedic and rehabilitative care. She currently leads her own practice, Dr. Mousam's Physiotherapy Clinic in Bangalore, where she combines patient-centric treatment with strategic clinic management. Throughout her career, she has held key roles across reputed hospitals and healthcare organizations, including serving as Chief Physiotherapist, Head of Department, and Consultant, demonstrating strong capabilities in clinical decision-making, team mentorship, and operational leadership.
                   </p>
                   <p>
-                    As a Certified Ergonomist, Dr. Mousam brings specialized expertise in addressing posture-related pain — particularly relevant for IT professionals, desk workers, and corporate employees in Bengaluru who suffer from neck pain, back pain, and repetitive strain injuries.
+                    In addition to her clinical work, Dr. Panchamia has significant experience in ergonomics, working with organizations to improve workplace safety, productivity, and injury prevention through assessments, training, and wellness initiatives. Her expertise spans musculoskeletal, neurological, and cardiopulmonary conditions, with a strong focus on rehabilitation and pain management.
                   </p>
                   <p>
-                    Patients consistently appreciate Dr. Mousam's ability to explain conditions clearly, provide personalized treatment plans, and guide them through every step of their recovery journey. Every session is designed around the individual — because no two patients are the same.
+                    With advanced qualifications in Orthopaedics and certification in Mulligan Therapy, she is committed to delivering evidence-based care and continuously enhancing patient outcomes through innovative techniques and holistic treatment approaches.
                   </p>
                 </div>
               </div>
