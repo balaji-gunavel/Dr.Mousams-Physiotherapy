@@ -19,7 +19,7 @@ const DoctorIntro = () => {
               Meet Your Physiotherapist
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Dr. Mousam Panchamia brings over 14 years of clinical experience in physiotherapy, specializing in orthopedic rehabilitation, pain management, and ergonomics. With a Master's in Physiotherapy and certification in ergonomics, Dr. Mousam is known for personalized treatment plans, clear guidance, and compassionate care that helps patients recover effectively.
+              Dr. Mousam S. Panchamia is a senior physiotherapist with 16+ years of expertise in orthopaedic rehabilitation, pain management, and ergonomics. As founder of Dr. Mousam’s Physiotherapy Clinic in Bangalore, she provides evidence-based care for musculoskeletal, neurological, and cardiopulmonary conditions, combining advanced clinical expertise, leadership experience, and specialized training in Orthopaedics and Mulligan Therapy.
             </p>
             <div className="grid grid-cols-2 gap-3 mb-6">
               {[
