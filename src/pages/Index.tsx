@@ -5,6 +5,7 @@ import TrustStrip from "@/components/home/TrustStrip";
 import ConditionsSection from "@/components/home/ConditionsSection";
 import TreatmentApproach from "@/components/home/TreatmentApproach";
 import DoctorIntro from "@/components/home/DoctorIntro";
+import CredibilityRow from "@/components/home/CredibilityRow";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import FacebookSection from "@/components/home/FacebookSection";
 import FinalCTA from "@/components/home/FinalCTA";
@@ -19,6 +20,7 @@ const Index = () => {
         <ConditionsSection />
         <TreatmentApproach />
         <DoctorIntro />
+        <CredibilityRow />
         <TestimonialsSection />
         <FacebookSection />
         <FinalCTA />
