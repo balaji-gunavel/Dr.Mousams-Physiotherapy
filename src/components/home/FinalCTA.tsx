@@ -18,7 +18,7 @@ const FinalCTA = () => {
               Book Appointment
             </a>
           </Button>
-          <Button variant="ctaOutline" size="xl" className="border-primary-foreground/80 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground" asChild>
+          <Button variant="ctaOutline" size="xl" className="border-primary-foreground/80 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground border-solid opacity-85 text-teal-700" asChild>
             <a href="tel:+919742839299">
               <Phone className="w-5 h-5" />
               Call Clinic
