@@ -1,60 +1,104 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Bone, Activity, ShieldCheck, Target, Dumbbell, Heart, Briefcase, Stethoscope, Zap, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Bone,
+  Activity,
+  Footprints,
+  Wrench,
+  HeartPulse,
+  Stethoscope,
+  Dumbbell,
+  RotateCcw,
+  Smile,
+  Brain,
+  Shield,
+  Hand,
+  Briefcase,
+  Monitor,
+  PersonStanding,
+} from "lucide-react";
 
-const categories = [
+const services = [
   {
-    title: "Orthopedic Physiotherapy",
-    desc: "Expert treatment for musculoskeletal conditions to restore movement and reduce pain.",
-    icon: Bone,
-    items: [
-      { name: "Back Pain Treatment", desc: "Targeted therapy for lower back, mid-back, and upper back pain using manual techniques and corrective exercises." },
-      { name: "Neck Pain Relief", desc: "Treatment for cervical strain, stiffness, and pain from poor posture or injury." },
-      { name: "Frozen Shoulder Therapy", desc: "Progressive mobilization and strengthening to restore shoulder range of motion." },
-      { name: "Tennis Elbow Treatment", desc: "Specialized exercises and manual therapy for lateral epicondylitis and forearm pain." },
-    ],
+    title: "Neck Pain",
+    icon: Activity,
+    desc: "Relieve stiffness, muscle tension, and discomfort caused by poor posture, stress, or injury. Personalized physiotherapy helps improve mobility, posture, and daily comfort.",
   },
   {
-    title: "Post-Surgery Rehabilitation",
-    desc: "Structured recovery programs to help you heal safely and regain strength after surgery.",
-    icon: Stethoscope,
-    items: [
-      { name: "ACL Recovery Program", desc: "Phase-based rehabilitation following ACL reconstruction for safe return to activity." },
-      { name: "Ligament Injury Rehab", desc: "Controlled strengthening and mobility restoration after ligament repair." },
-      { name: "Joint Replacement Recovery", desc: "Post-operative therapy for knee, hip, and shoulder replacement patients." },
-    ],
-  },
-  {
-    title: "Sports Injury Rehabilitation",
-    desc: "Get back to your sport with expert guidance and performance-focused recovery.",
+    title: "Shoulder Pain",
     icon: Dumbbell,
-    items: [
-      { name: "Athletic Injury Recovery", desc: "Comprehensive treatment for sprains, strains, and sports-related injuries." },
-      { name: "Muscle Recovery", desc: "Targeted therapy for muscle tears, overuse injuries, and fatigue-related conditions." },
-      { name: "Mobility Restoration", desc: "Functional movement training to restore flexibility and prevent re-injury." },
-    ],
+    desc: "Effective treatment for frozen shoulder, rotator cuff injuries, and muscle strain. Restore strength, flexibility, and pain-free movement with guided therapy.",
   },
   {
-    title: "Chronic Pain Management",
-    desc: "Long-term pain management strategies that address the root cause, not just symptoms.",
-    icon: Heart,
-    items: [
-      { name: "Cervical Spondylitis", desc: "Evidence-based treatment for neck degeneration, stiffness, and radiating pain." },
-      { name: "Lower Back Pain", desc: "Comprehensive approach for persistent lower back pain including postural correction." },
-      { name: "Tailbone Pain (Coccydynia)", desc: "Specialized treatment for coccyx pain with ergonomic advice and targeted therapy." },
-    ],
+    title: "Back Pain",
+    icon: Bone,
+    desc: "Comprehensive care for lower back, upper back, and posture-related pain conditions. Our therapy focuses on pain relief, spinal mobility, and long-term prevention.",
+  },
+  {
+    title: "Knee Pain",
+    icon: Footprints,
+    desc: "Targeted rehabilitation for ligament injuries, arthritis, and sports-related knee pain. Improve joint stability, reduce pain, and regain confident movement.",
+  },
+  {
+    title: "Fracture Rehabilitation",
+    icon: Wrench,
+    desc: "Structured recovery programs to restore mobility and strength after fractures. We help patients safely return to daily activities with guided rehabilitation.",
+  },
+  {
+    title: "Total Knee Replacement Rehabilitation",
+    icon: Stethoscope,
+    desc: "Post-surgical rehabilitation designed to improve knee movement and functional recovery. Focused exercises help regain strength, balance, and walking confidence.",
+  },
+  {
+    title: "Total Hip Replacement Rehabilitation",
+    icon: HeartPulse,
+    desc: "Specialized therapy to support faster and safer recovery after hip replacement surgery. Enhance flexibility, muscle strength, and overall mobility with expert guidance.",
+  },
+  {
+    title: "ACL/Meniscus Repair Rehabilitation",
+    icon: Dumbbell,
+    desc: "Advanced rehabilitation programs for sports injuries and post-surgical recovery. Restore knee stability, agility, and performance through progressive therapy.",
+  },
+  {
+    title: "Arthroscopy Rehabilitation",
+    icon: RotateCcw,
+    desc: "Personalized recovery plans following minimally invasive joint surgeries. Reduce stiffness, improve movement, and regain normal joint function effectively.",
+  },
+  {
+    title: "Bell's Palsy Care",
+    icon: Smile,
+    desc: "Therapeutic exercises and stimulation techniques to improve facial muscle function. Our treatment supports faster recovery and better facial coordination.",
+  },
+  {
+    title: "Stroke/Parkinson's Rehabilitation",
+    icon: Brain,
+    desc: "Focused neuro-rehabilitation to improve balance, coordination, and movement control. We help patients regain independence and improve quality of life.",
+  },
+  {
+    title: "Spondylitis Care",
+    icon: Shield,
+    desc: "Specialized physiotherapy for spinal stiffness, inflammation, and chronic pain management. Improve posture, flexibility, and spinal mobility with tailored exercises.",
+  },
+  {
+    title: "Arthritis Care",
+    icon: Hand,
+    desc: "Gentle and effective therapy to reduce joint pain, swelling, and stiffness. Maintain mobility and improve daily function through personalized care plans.",
   },
   {
     title: "Ergonomic Consultation",
-    desc: "Prevent workplace pain with expert ergonomic assessment and posture guidance.",
     icon: Briefcase,
-    items: [
-      { name: "Desk Worker Assessment", desc: "Workstation evaluation and adjustment recommendations for desk-bound professionals." },
-      { name: "Corporate Ergonomics", desc: "Workplace pain prevention programs for IT companies and corporate offices." },
-      { name: "Posture Correction", desc: "Postural assessment and corrective exercise programs for long-term improvement." },
-      { name: "Workplace Pain Prevention", desc: "Proactive strategies to prevent repetitive strain and overuse injuries." },
-    ],
+    desc: "Professional assessment to improve workplace posture and reduce strain-related injuries. Optimize comfort and productivity with customized ergonomic recommendations.",
+  },
+  {
+    title: "Workstation Setup Guidance",
+    icon: Monitor,
+    desc: "Expert guidance for creating a healthy and posture-friendly workstation setup. Prevent neck, back, and wrist discomfort caused by prolonged desk work.",
+  },
+  {
+    title: "Posture Analysis",
+    icon: PersonStanding,
+    desc: "Detailed assessment of posture and movement patterns to identify imbalances. Corrective exercises and guidance help improve alignment and prevent pain.",
   },
 ];
 
@@ -75,31 +119,25 @@ const Treatments = () => {
         </section>
 
         <section className="section-padding">
-          <div className="container-narrow space-y-16">
-            {categories.map((cat, catIdx) => (
-              <div key={cat.title} className={`${catIdx % 2 === 1 ? "" : ""}`}>
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <cat.icon className="w-6 h-6 text-primary" />
+          <div className="container-narrow">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {services.map((s) => (
+                <div
+                  key={s.title}
+                  className="bg-card border border-border rounded-xl p-6 hover:shadow-md hover:border-primary/30 transition-all flex flex-col"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <s.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <div>
-                    <h2 className="font-heading text-2xl font-bold text-foreground">{cat.title}</h2>
-                    <p className="text-sm text-muted-foreground">{cat.desc}</p>
-                  </div>
+                  <h3 className="font-heading text-lg font-semibold text-foreground mb-2">
+                    {s.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {s.desc}
+                  </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {cat.items.map((item) => (
-                    <div key={item.name} className="bg-card border border-border rounded-xl p-5 hover:shadow-md hover:border-primary/20 transition-all">
-                      <h3 className="font-semibold text-foreground mb-1 flex items-center gap-2">
-                        <ArrowRight className="w-4 h-4 text-primary" />
-                        {item.name}
-                      </h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </section>
 
