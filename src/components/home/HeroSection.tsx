@@ -17,14 +17,14 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             14+ years of experience helping patients recover from orthopedic injuries, chronic pain, posture-related issues, and post-surgery rehabilitation.
           </p>
-          <div className="flex flex-wrap gap-3 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          <div className="flex flex-wrap gap-3 animate-fade-in-up text-cyan-800 bg-transparent text-base" style={{ animationDelay: "0.3s" }}>
             <Button variant="ctaWhite" size="lg" asChild>
               <a href="https://wa.me/919742839299?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener noreferrer">
                 <CalendarCheck className="w-5 h-5" />
                 Book Appointment
               </a>
             </Button>
-            <Button variant="ctaOutline" size="lg" className="border-primary-foreground/80 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground" asChild>
+            <Button variant="ctaOutline" size="lg" className="border-primary-foreground/80 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground text-teal-900 bg-white" asChild>
               <a href="tel:+919742839299">
                 <Phone className="w-5 h-5" />
                 Call Now
