@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Clock } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -7,7 +8,10 @@ const Footer = () => {
       <div className="container-narrow section-padding pb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           <div>
-            <h3 className="font-heading text-xl font-semibold mb-4">Dr. Mousam's Physiotherapy</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img src={logo} alt="Dr. Mousam's Physiotherapy logo" className="h-12 w-auto object-contain bg-white rounded-md p-1" />
+              <h3 className="font-heading text-xl font-semibold">Dr. Mousam's Physiotherapy</h3>
+            </div>
             <p className="text-sm opacity-80 leading-relaxed">
               Trusted physiotherapy clinic in Bommanahalli, Bengaluru. 14+ years of expert care in pain relief, rehabilitation, and recovery.
             </p>
