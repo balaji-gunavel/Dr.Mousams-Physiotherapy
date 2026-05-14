@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -19,9 +20,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container-narrow flex items-center justify-between h-16 md:h-20 px-4 md:px-8">
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-heading font-bold text-lg">D</span>
-          </div>
+          <img src={logo} alt="Dr. Mousam's Physiotherapy logo" className="h-10 md:h-12 w-auto object-contain" />
           <div className="leading-tight">
             <span className="font-heading font-semibold text-foreground text-sm md:text-base block">Dr. Mousam's</span>
             <span className="text-xs text-muted-foreground">Physiotherapy</span>
