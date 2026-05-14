@@ -10,12 +10,12 @@ const items = [
 
 const CredibilityRow = () => {
   return (
-    <section className="pb-8 md:pb-12">
+    <section className="-mt-8 md:-mt-12 pb-6 md:pb-8">
       <div className="container-narrow">
-        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 md:gap-x-8 border-y border-border py-4">
+        <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-x-6 gap-y-3 md:gap-x-8 lg:gap-x-10 border-y border-border py-3 md:py-4">
           {items.map((item) => (
-            <div key={item.text} className="flex items-center gap-1.5 text-xs md:text-sm text-foreground">
-              <item.icon className="w-3.5 h-3.5 md:w-4 md:h-4 text-primary shrink-0" strokeWidth={1.75} />
+            <div key={item.text} className="flex items-center gap-2 text-sm text-foreground">
+              <item.icon className="w-5 h-5 md:w-6 md:h-6 text-primary shrink-0" strokeWidth={1.75} />
               <span className="whitespace-nowrap">{item.text}</span>
             </div>
           ))}
