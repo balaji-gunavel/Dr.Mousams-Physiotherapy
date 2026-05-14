@@ -49,13 +49,13 @@ const CountUp = ({ target, duration = 2000, format }: { target: number; duration
 
 const TrustStrip = () => {
   return (
-    <section className="section-padding bg-secondary/30">
+    <section className="py-8 md:py-12 bg-secondary/30">
       <div className="container-narrow">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {metrics.map((m) => (
             <div
               key={m.label}
-              className="bg-card rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-border p-8 md:p-10 text-center"
+              className="bg-card rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-border p-5 md:p-6 text-center"
             >
               <div className="font-heading text-5xl md:text-6xl font-bold text-primary mb-3">
                 <CountUp target={m.value} format={m.format} />
