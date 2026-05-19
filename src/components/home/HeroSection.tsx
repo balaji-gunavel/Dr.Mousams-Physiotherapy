@@ -11,7 +11,7 @@ const HeroSection = () => {
       </div>
       <div className="relative z-10 container-narrow px-4 md:px-8 py-20">
         <div className="max-w-2xl">
-          <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in-up">
+          <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up" style={{ textShadow: "0 2px 8px rgba(0, 0, 0, 0.35)" }}>
             Expert Physiotherapy Care for Pain Relief & Recovery
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
