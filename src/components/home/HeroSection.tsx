@@ -8,13 +8,20 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img src={heroImage} alt="Modern physiotherapy clinic" className="w-full h-full object-cover" loading="eager" />
         <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.05) 75%, rgba(0,0,0,0) 100%)",
+          }}
+        />
       </div>
       <div className="relative z-10 container-narrow px-4 md:px-8 py-20">
         <div className="max-w-2xl">
           <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up" style={{ textShadow: "0 2px 8px rgba(0, 0, 0, 0.35)" }}>
             Expert Physiotherapy Care for Pain Relief & Recovery
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+          <p className="text-lg md:text-xl text-white mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.15s", textShadow: "0 1px 6px rgba(0, 0, 0, 0.4)" }}>
             14+ years of experience helping patients recover from orthopedic injuries, chronic pain, posture-related issues, and post-surgery rehabilitation.
           </p>
           <div className="flex flex-wrap gap-3 animate-fade-in-up text-cyan-800 bg-transparent text-base" style={{ animationDelay: "0.3s" }}>
