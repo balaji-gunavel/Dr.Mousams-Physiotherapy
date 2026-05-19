@@ -11,25 +11,8 @@ const HeroSection = () => {
       </div>
       <div className="relative z-10 container-narrow px-4 md:px-8 py-20">
         <div className="max-w-2xl">
-          <h1
-            className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-up"
-            style={{
-              filter:
-                "drop-shadow(0 3px 6px rgba(0,0,0,0.18)) drop-shadow(0 8px 20px rgba(0,0,0,0.20)) drop-shadow(0 1px 0 rgba(255,255,255,0.4))",
-            }}
-          >
-            <span
-              style={{
-                backgroundImage:
-                  "linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 50%, #E5E7EB 100%)",
-                WebkitBackgroundClip: "text",
-                backgroundClip: "text",
-                color: "transparent",
-                WebkitTextStroke: "1px rgba(255,255,255,0.25)",
-              }}
-            >
-              Expert Physiotherapy Care for Pain Relief & Recovery
-            </span>
+          <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up" style={{ textShadow: "0 2px 8px rgba(0, 0, 0, 0.35)" }}>
+            Expert Physiotherapy Care for Pain Relief & Recovery
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             14+ years of experience helping patients recover from orthopedic injuries, chronic pain, posture-related issues, and post-surgery rehabilitation.
