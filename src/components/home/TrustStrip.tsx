@@ -8,9 +8,9 @@ type Metric = {
 };
 
 const metrics: Metric[] = [
-  { value: 16, suffix: "+", label: "Years of Experience" },
-  { value: 2000, suffix: "+", label: "Patients Served", format: (n) => n.toLocaleString() },
-  { value: 10000, suffix: "+", label: "Physio Sessions", format: (n) => n.toLocaleString() },
+  { value: 16, suffix: "+", label: "Years Experience" },
+  { value: 50, suffix: "K+", label: "Patients Treated" },
+  { value: 2, suffix: "L+", label: "Physio Sessions" },
 ];
 
 const CountUp = ({ target, duration = 2000, format }: { target: number; duration?: number; format?: (n: number) => string }) => {
@@ -65,6 +65,9 @@ const TrustStrip = () => {
             </div>
           ))}
         </div>
+        <p className="mt-6 text-center text-sm md:text-base font-medium text-muted-foreground/80 tracking-wide">
+          We show results with honesty and dedication. No false promises.
+        </p>
       </div>
     </section>
   );
