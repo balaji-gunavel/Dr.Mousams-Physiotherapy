@@ -17,7 +17,7 @@ import {
 import neckPainIcon from "@/assets/neck-pain.png";
 
 const conditions = [
-  { icon: Activity, title: "Neck Pain" },
+  { icon: neckPainIcon, title: "Neck Pain", isImage: true },
   { icon: Dumbbell, title: "Shoulder Pain" },
   { icon: Bone, title: "Back Pain" },
   { icon: Footprints, title: "Knee Pain" },
@@ -33,7 +33,7 @@ const conditions = [
   { icon: Briefcase, title: "Ergonomic Consultation" },
   { icon: Monitor, title: "Workstation Setup Guidance" },
   { icon: PersonStanding, title: "Posture Analysis" },
-];
+] as Array<{ icon: any; title: string; isImage?: boolean }>;
 
 const ConditionsSection = () => {
   return (
