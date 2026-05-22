@@ -22,7 +22,8 @@ import neckPainIcon from "@/assets/neck-pain.png";
 const services = [
   {
     title: "Neck Pain",
-    icon: Activity,
+    icon: neckPainIcon,
+    isImage: true,
     desc: "Relieve stiffness, muscle tension, and discomfort caused by poor posture, stress, or injury. Personalized physiotherapy helps improve mobility, posture, and daily comfort.",
   },
   {
