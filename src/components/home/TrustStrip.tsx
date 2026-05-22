@@ -9,7 +9,7 @@ type Metric = {
 
 const metrics: Metric[] = [
   { value: 16, suffix: "+", label: "Years of Experience" },
-  { value: 2000, suffix: "+", label: "Patients Served", format: (n) => n.toLocaleString() },
+  { value: 200000, suffix: "+", label: "Patients Served", format: (n) => n.toLocaleString('en-IN') },
   { value: 10000, suffix: "+", label: "Physio Sessions", format: (n) => n.toLocaleString() },
 ];
 
