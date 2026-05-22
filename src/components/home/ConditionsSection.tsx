@@ -53,7 +53,11 @@ const ConditionsSection = () => {
               key={cond.title}
               className="bg-card border border-border rounded-xl p-5 text-center hover:shadow-md hover:border-primary/30 transition-all group flex flex-col items-center justify-center"
             >
-              <cond.icon className="w-8 h-8 mb-3 text-primary group-hover:scale-110 transition-transform" />
+              {cond.isImage ? (
+                <img src={cond.icon} alt={cond.title} className="w-8 h-8 mb-3 object-contain group-hover:scale-110 transition-transform" />
+              ) : (
+                <cond.icon className="w-8 h-8 mb-3 text-primary group-hover:scale-110 transition-transform" />
+              )}
               <span className="text-sm font-medium text-foreground">{cond.title}</span>
             </div>
           ))}
