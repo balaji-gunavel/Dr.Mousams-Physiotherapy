@@ -9,8 +9,8 @@ type Metric = {
 
 const metrics: Metric[] = [
   { value: 16, suffix: "+", label: "Years of Experience" },
-  { value: 2000, suffix: "+", label: "Patients Served", format: (n) => n.toLocaleString() },
-  { value: 10000, suffix: "+", label: "Physio Sessions", format: (n) => n.toLocaleString() },
+  { value: 50000, suffix: "+", label: "Patients Treated", format: (n) => n.toLocaleString("en-US") },
+  { value: 200000, suffix: "+", label: "Physio Sessions", format: (n) => n.toLocaleString("en-IN") },
 ];
 
 const CountUp = ({ target, duration = 2000, format }: { target: number; duration?: number; format?: (n: number) => string }) => {
