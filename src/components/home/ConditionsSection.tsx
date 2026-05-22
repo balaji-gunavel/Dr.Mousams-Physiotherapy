@@ -1,6 +1,5 @@
 import {
   Bone,
-  Activity,
   Footprints,
   Wrench,
   HeartPulse,
@@ -15,6 +14,7 @@ import {
   Monitor,
   PersonStanding,
 } from "lucide-react";
+import neckPainIcon from "@/assets/neck-pain.png";
 
 const conditions = [
   { icon: Activity, title: "Neck Pain" },
