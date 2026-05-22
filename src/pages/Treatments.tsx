@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import {
   Bone,
-  Activity,
   Footprints,
   Wrench,
   HeartPulse,
@@ -18,11 +17,13 @@ import {
   Monitor,
   PersonStanding,
 } from "lucide-react";
+import neckPainIcon from "@/assets/neck-pain.png";
 
 const services = [
   {
     title: "Neck Pain",
-    icon: Activity,
+    icon: neckPainIcon,
+    isImage: true,
     desc: "Relieve stiffness, muscle tension, and discomfort caused by poor posture, stress, or injury. Personalized physiotherapy helps improve mobility, posture, and daily comfort.",
   },
   {
@@ -127,7 +128,11 @@ const Treatments = () => {
                   className="bg-card border border-border rounded-xl p-6 hover:shadow-md hover:border-primary/30 transition-all flex flex-col"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <s.icon className="w-6 h-6 text-primary" />
+                    {(s as any).isImage ? (
+                      <img src={s.icon as string} alt={s.title} className="w-8 h-8 object-contain" />
+                    ) : (
+                      <s.icon className="w-6 h-6 text-primary" />
+                    )}
                   </div>
                   <h3 className="font-heading text-lg font-semibold text-foreground mb-2">
                     {s.title}
