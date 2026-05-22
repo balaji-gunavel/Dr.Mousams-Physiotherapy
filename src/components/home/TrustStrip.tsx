@@ -65,6 +65,9 @@ const TrustStrip = () => {
             </div>
           ))}
         </div>
+        <p className="mt-8 md:mt-10 text-center text-sm md:text-base font-semibold text-gray-600 tracking-wide">
+          We show results with honesty and dedication. No false promises.
+        </p>
       </div>
     </section>
   );
