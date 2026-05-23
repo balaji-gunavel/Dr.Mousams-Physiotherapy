@@ -2,15 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import {
-  Bone,
-  Footprints,
-  Wrench,
-  HeartPulse,
-  Stethoscope,
-  Dumbbell,
-  RotateCcw,
-  Smile,
-  Brain,
   Shield,
   Hand,
   Briefcase,
@@ -18,6 +9,16 @@ import {
   PersonStanding,
 } from "lucide-react";
 import neckPainIcon from "@/assets/neck-pain.png";
+import shoulderIcon from "@/assets/shoulder.png";
+import backIcon from "@/assets/back.png";
+import kneeIcon from "@/assets/knee.png";
+import fractureIcon from "@/assets/fracture.png";
+import kneeReplacementIcon from "@/assets/knee-replacement.png";
+import hipReplacementIcon from "@/assets/hip-replacement.png";
+import aclMeniscusIcon from "@/assets/acl-meniscus.png";
+import arthroscopyIcon from "@/assets/arthroscopy.png";
+import bellsPalsyIcon from "@/assets/bells-palsy.png";
+import strokeParkinsonsIcon from "@/assets/stroke-parkinsons.png";
 
 const services = [
   {
@@ -28,52 +29,62 @@ const services = [
   },
   {
     title: "Shoulder Pain",
-    icon: Dumbbell,
+    icon: shoulderIcon,
+    isImage: true,
     desc: "Effective treatment for frozen shoulder, rotator cuff injuries, and muscle strain. Restore strength, flexibility, and pain-free movement with guided therapy.",
   },
   {
     title: "Back Pain",
-    icon: Bone,
+    icon: backIcon,
+    isImage: true,
     desc: "Comprehensive care for lower back, upper back, and posture-related pain conditions. Our therapy focuses on pain relief, spinal mobility, and long-term prevention.",
   },
   {
     title: "Knee Pain",
-    icon: Footprints,
+    icon: kneeIcon,
+    isImage: true,
     desc: "Targeted rehabilitation for ligament injuries, arthritis, and sports-related knee pain. Improve joint stability, reduce pain, and regain confident movement.",
   },
   {
     title: "Fracture Rehabilitation",
-    icon: Wrench,
+    icon: fractureIcon,
+    isImage: true,
     desc: "Structured recovery programs to restore mobility and strength after fractures. We help patients safely return to daily activities with guided rehabilitation.",
   },
   {
     title: "Total Knee Replacement Rehabilitation",
-    icon: Stethoscope,
+    icon: kneeReplacementIcon,
+    isImage: true,
     desc: "Post-surgical rehabilitation designed to improve knee movement and functional recovery. Focused exercises help regain strength, balance, and walking confidence.",
   },
   {
     title: "Total Hip Replacement Rehabilitation",
-    icon: HeartPulse,
+    icon: hipReplacementIcon,
+    isImage: true,
     desc: "Specialized therapy to support faster and safer recovery after hip replacement surgery. Enhance flexibility, muscle strength, and overall mobility with expert guidance.",
   },
   {
     title: "ACL/Meniscus Repair Rehabilitation",
-    icon: Dumbbell,
+    icon: aclMeniscusIcon,
+    isImage: true,
     desc: "Advanced rehabilitation programs for sports injuries and post-surgical recovery. Restore knee stability, agility, and performance through progressive therapy.",
   },
   {
     title: "Arthroscopy Rehabilitation",
-    icon: RotateCcw,
+    icon: arthroscopyIcon,
+    isImage: true,
     desc: "Personalized recovery plans following minimally invasive joint surgeries. Reduce stiffness, improve movement, and regain normal joint function effectively.",
   },
   {
     title: "Bell's Palsy Care",
-    icon: Smile,
+    icon: bellsPalsyIcon,
+    isImage: true,
     desc: "Therapeutic exercises and stimulation techniques to improve facial muscle function. Our treatment supports faster recovery and better facial coordination.",
   },
   {
     title: "Stroke/Parkinson's Rehabilitation",
-    icon: Brain,
+    icon: strokeParkinsonsIcon,
+    isImage: true,
     desc: "Focused neuro-rehabilitation to improve balance, coordination, and movement control. We help patients regain independence and improve quality of life.",
   },
   {

@@ -1,13 +1,5 @@
 import {
-  Bone,
-  Footprints,
-  Wrench,
-  HeartPulse,
-  Stethoscope,
-  Dumbbell,
-  RotateCcw,
   Smile,
-  Brain,
   Shield,
   Hand,
   Briefcase,
@@ -15,19 +7,29 @@ import {
   PersonStanding,
 } from "lucide-react";
 import neckPainIcon from "@/assets/neck-pain.png";
+import shoulderIcon from "@/assets/shoulder.png";
+import backIcon from "@/assets/back.png";
+import kneeIcon from "@/assets/knee.png";
+import fractureIcon from "@/assets/fracture.png";
+import kneeReplacementIcon from "@/assets/knee-replacement.png";
+import hipReplacementIcon from "@/assets/hip-replacement.png";
+import aclMeniscusIcon from "@/assets/acl-meniscus.png";
+import arthroscopyIcon from "@/assets/arthroscopy.png";
+import bellsPalsyIcon from "@/assets/bells-palsy.png";
+import strokeParkinsonsIcon from "@/assets/stroke-parkinsons.png";
 
 const conditions = [
   { icon: neckPainIcon, title: "Neck Pain", isImage: true },
-  { icon: Dumbbell, title: "Shoulder Pain" },
-  { icon: Bone, title: "Back Pain" },
-  { icon: Footprints, title: "Knee Pain" },
-  { icon: Wrench, title: "Fracture Rehabilitation" },
-  { icon: Stethoscope, title: "Total Knee Replacement Rehabilitation" },
-  { icon: HeartPulse, title: "Total Hip Replacement Rehabilitation" },
-  { icon: Dumbbell, title: "ACL/Meniscus Repair Rehabilitation" },
-  { icon: RotateCcw, title: "Arthroscopy Rehabilitation" },
-  { icon: Smile, title: "Bell's Palsy Care" },
-  { icon: Brain, title: "Stroke/Parkinson's Rehabilitation" },
+  { icon: shoulderIcon, title: "Shoulder Pain", isImage: true },
+  { icon: backIcon, title: "Back Pain", isImage: true },
+  { icon: kneeIcon, title: "Knee Pain", isImage: true },
+  { icon: fractureIcon, title: "Fracture Rehabilitation", isImage: true },
+  { icon: kneeReplacementIcon, title: "Total Knee Replacement Rehabilitation", isImage: true },
+  { icon: hipReplacementIcon, title: "Total Hip Replacement Rehabilitation", isImage: true },
+  { icon: aclMeniscusIcon, title: "ACL/Meniscus Repair Rehabilitation", isImage: true },
+  { icon: arthroscopyIcon, title: "Arthroscopy Rehabilitation", isImage: true },
+  { icon: bellsPalsyIcon, title: "Bell's Palsy Care", isImage: true },
+  { icon: strokeParkinsonsIcon, title: "Stroke/Parkinson's Rehabilitation", isImage: true },
   { icon: Shield, title: "Spondylitis Care" },
   { icon: Hand, title: "Arthritis Care" },
   { icon: Briefcase, title: "Ergonomic Consultation" },
