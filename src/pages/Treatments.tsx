@@ -129,7 +129,7 @@ const Treatments = () => {
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                     {(s as any).isImage ? (
-                      <img src={s.icon as string} alt={s.title} className="w-10 h-10 object-contain" />
+                      <img src={s.icon as string} alt={s.title} className="w-[50px] h-[50px] object-contain" />
                     ) : (
                       <s.icon className="w-6 h-6 text-primary" />
                     )}
