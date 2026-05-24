@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/home/HeroSection";
 import TrustStrip from "@/components/home/TrustStrip";
 import ConditionsSection from "@/components/home/ConditionsSection";
+import PackagesSection from "@/components/home/PackagesSection";
 import TreatmentApproach from "@/components/home/TreatmentApproach";
 import DoctorIntro from "@/components/home/DoctorIntro";
 import CredibilityRow from "@/components/home/CredibilityRow";
