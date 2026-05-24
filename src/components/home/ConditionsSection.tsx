@@ -1,11 +1,3 @@
-import {
-  Smile,
-  Shield,
-  Hand,
-  Briefcase,
-  Monitor,
-  PersonStanding,
-} from "lucide-react";
 import neckPainIcon from "@/assets/neck-pain.png";
 import shoulderIcon from "@/assets/shoulder.png";
 import backIcon from "@/assets/back.png";
@@ -17,25 +9,30 @@ import aclMeniscusIcon from "@/assets/acl-meniscus.png";
 import arthroscopyIcon from "@/assets/arthroscopy.png";
 import bellsPalsyIcon from "@/assets/bells-palsy.png";
 import strokeParkinsonsIcon from "@/assets/stroke-parkinsons.png";
+import spondylitisIcon from "@/assets/spondylitis.png";
+import arthritisIcon from "@/assets/arthritis.png";
+import ergonomicIcon from "@/assets/ergonomic-consultation.png";
+import workstationIcon from "@/assets/workstation-setup.png";
+import postureIcon from "@/assets/posture-analysis.png";
 
 const conditions = [
-  { icon: neckPainIcon, title: "Neck Pain", isImage: true },
-  { icon: shoulderIcon, title: "Shoulder Pain", isImage: true },
-  { icon: backIcon, title: "Back Pain", isImage: true },
-  { icon: kneeIcon, title: "Knee Pain", isImage: true },
-  { icon: fractureIcon, title: "Fracture Rehabilitation", isImage: true },
-  { icon: kneeReplacementIcon, title: "Total Knee Replacement Rehabilitation", isImage: true },
-  { icon: hipReplacementIcon, title: "Total Hip Replacement Rehabilitation", isImage: true },
-  { icon: aclMeniscusIcon, title: "ACL/Meniscus Repair Rehabilitation", isImage: true },
-  { icon: arthroscopyIcon, title: "Arthroscopy Rehabilitation", isImage: true },
-  { icon: bellsPalsyIcon, title: "Bell's Palsy Care", isImage: true },
-  { icon: strokeParkinsonsIcon, title: "Stroke/Parkinson's Rehabilitation", isImage: true },
-  { icon: Shield, title: "Spondylitis Care" },
-  { icon: Hand, title: "Arthritis Care" },
-  { icon: Briefcase, title: "Ergonomic Consultation" },
-  { icon: Monitor, title: "Workstation Setup Guidance" },
-  { icon: PersonStanding, title: "Posture Analysis" },
-] as Array<{ icon: any; title: string; isImage?: boolean }>;
+  { icon: neckPainIcon, title: "Neck Pain" },
+  { icon: shoulderIcon, title: "Shoulder Pain" },
+  { icon: backIcon, title: "Back Pain" },
+  { icon: kneeIcon, title: "Knee Pain" },
+  { icon: fractureIcon, title: "Fracture Rehabilitation" },
+  { icon: kneeReplacementIcon, title: "Total Knee Replacement Rehabilitation" },
+  { icon: hipReplacementIcon, title: "Total Hip Replacement Rehabilitation" },
+  { icon: aclMeniscusIcon, title: "ACL/Meniscus Repair Rehabilitation" },
+  { icon: arthroscopyIcon, title: "Arthroscopy Rehabilitation" },
+  { icon: bellsPalsyIcon, title: "Bell's Palsy Care" },
+  { icon: strokeParkinsonsIcon, title: "Stroke/Parkinson's Rehabilitation" },
+  { icon: spondylitisIcon, title: "Spondylitis Care" },
+  { icon: arthritisIcon, title: "Arthritis Care" },
+  { icon: ergonomicIcon, title: "Ergonomic Consultation" },
+  { icon: workstationIcon, title: "Workstation Setup Guidance" },
+  { icon: postureIcon, title: "Posture Analysis" },
+];
 
 const ConditionsSection = () => {
   return (
@@ -55,11 +52,7 @@ const ConditionsSection = () => {
               key={cond.title}
               className="bg-card border border-border rounded-xl p-5 text-center hover:shadow-md hover:border-primary/30 transition-all group flex flex-col items-center justify-center"
             >
-              {cond.isImage ? (
-                <img src={cond.icon} alt={cond.title} className="w-10 h-10 mb-3 object-contain group-hover:scale-110 transition-transform" />
-              ) : (
-                <cond.icon className="w-8 h-8 mb-3 text-primary group-hover:scale-110 transition-transform" />
-              )}
+              <img src={cond.icon} alt={cond.title} className="w-10 h-10 mb-3 object-contain group-hover:scale-110 transition-transform" />
               <span className="text-sm font-medium text-foreground">{cond.title}</span>
             </div>
           ))}
