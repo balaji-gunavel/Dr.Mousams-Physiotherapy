@@ -1,13 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import {
-  Shield,
-  Hand,
-  Briefcase,
-  Monitor,
-  PersonStanding,
-} from "lucide-react";
 import neckPainIcon from "@/assets/neck-pain.png";
 import shoulderIcon from "@/assets/shoulder.png";
 import backIcon from "@/assets/back.png";
@@ -19,97 +12,91 @@ import aclMeniscusIcon from "@/assets/acl-meniscus.png";
 import arthroscopyIcon from "@/assets/arthroscopy.png";
 import bellsPalsyIcon from "@/assets/bells-palsy.png";
 import strokeParkinsonsIcon from "@/assets/stroke-parkinsons.png";
+import spondylitisIcon from "@/assets/spondylitis.png";
+import arthritisIcon from "@/assets/arthritis.png";
+import ergonomicIcon from "@/assets/ergonomic-consultation.png";
+import workstationIcon from "@/assets/workstation-setup.png";
+import postureIcon from "@/assets/posture-analysis.png";
 
 const services = [
   {
     title: "Neck Pain",
     icon: neckPainIcon,
-    isImage: true,
     desc: "Relieve stiffness, muscle tension, and discomfort caused by poor posture, stress, or injury. Personalized physiotherapy helps improve mobility, posture, and daily comfort.",
   },
   {
     title: "Shoulder Pain",
     icon: shoulderIcon,
-    isImage: true,
     desc: "Effective treatment for frozen shoulder, rotator cuff injuries, and muscle strain. Restore strength, flexibility, and pain-free movement with guided therapy.",
   },
   {
     title: "Back Pain",
     icon: backIcon,
-    isImage: true,
     desc: "Comprehensive care for lower back, upper back, and posture-related pain conditions. Our therapy focuses on pain relief, spinal mobility, and long-term prevention.",
   },
   {
     title: "Knee Pain",
     icon: kneeIcon,
-    isImage: true,
     desc: "Targeted rehabilitation for ligament injuries, arthritis, and sports-related knee pain. Improve joint stability, reduce pain, and regain confident movement.",
   },
   {
     title: "Fracture Rehabilitation",
     icon: fractureIcon,
-    isImage: true,
     desc: "Structured recovery programs to restore mobility and strength after fractures. We help patients safely return to daily activities with guided rehabilitation.",
   },
   {
     title: "Total Knee Replacement Rehabilitation",
     icon: kneeReplacementIcon,
-    isImage: true,
     desc: "Post-surgical rehabilitation designed to improve knee movement and functional recovery. Focused exercises help regain strength, balance, and walking confidence.",
   },
   {
     title: "Total Hip Replacement Rehabilitation",
     icon: hipReplacementIcon,
-    isImage: true,
     desc: "Specialized therapy to support faster and safer recovery after hip replacement surgery. Enhance flexibility, muscle strength, and overall mobility with expert guidance.",
   },
   {
     title: "ACL/Meniscus Repair Rehabilitation",
     icon: aclMeniscusIcon,
-    isImage: true,
     desc: "Advanced rehabilitation programs for sports injuries and post-surgical recovery. Restore knee stability, agility, and performance through progressive therapy.",
   },
   {
     title: "Arthroscopy Rehabilitation",
     icon: arthroscopyIcon,
-    isImage: true,
     desc: "Personalized recovery plans following minimally invasive joint surgeries. Reduce stiffness, improve movement, and regain normal joint function effectively.",
   },
   {
     title: "Bell's Palsy Care",
     icon: bellsPalsyIcon,
-    isImage: true,
     desc: "Therapeutic exercises and stimulation techniques to improve facial muscle function. Our treatment supports faster recovery and better facial coordination.",
   },
   {
     title: "Stroke/Parkinson's Rehabilitation",
     icon: strokeParkinsonsIcon,
-    isImage: true,
     desc: "Focused neuro-rehabilitation to improve balance, coordination, and movement control. We help patients regain independence and improve quality of life.",
   },
   {
     title: "Spondylitis Care",
-    icon: Shield,
+    icon: spondylitisIcon,
     desc: "Specialized physiotherapy for spinal stiffness, inflammation, and chronic pain management. Improve posture, flexibility, and spinal mobility with tailored exercises.",
   },
   {
     title: "Arthritis Care",
-    icon: Hand,
+    icon: arthritisIcon,
     desc: "Gentle and effective therapy to reduce joint pain, swelling, and stiffness. Maintain mobility and improve daily function through personalized care plans.",
   },
   {
     title: "Ergonomic Consultation",
-    icon: Briefcase,
+    icon: ergonomicIcon,
     desc: "Professional assessment to improve workplace posture and reduce strain-related injuries. Optimize comfort and productivity with customized ergonomic recommendations.",
   },
   {
     title: "Workstation Setup Guidance",
-    icon: Monitor,
+    icon: workstationIcon,
     desc: "Expert guidance for creating a healthy and posture-friendly workstation setup. Prevent neck, back, and wrist discomfort caused by prolonged desk work.",
   },
   {
     title: "Posture Analysis",
-    icon: PersonStanding,
+    icon: postureIcon,
     desc: "Detailed assessment of posture and movement patterns to identify imbalances. Corrective exercises and guidance help improve alignment and prevent pain.",
   },
 ];
@@ -139,11 +126,7 @@ const Treatments = () => {
                   className="bg-card border border-border rounded-xl p-6 hover:shadow-md hover:border-primary/30 transition-all flex flex-col"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    {(s as any).isImage ? (
-                      <img src={s.icon as string} alt={s.title} className="w-[50px] h-[50px] object-contain" />
-                    ) : (
-                      <s.icon className="w-6 h-6 text-primary" />
-                    )}
+                    <img src={s.icon} alt={s.title} className="w-[50px] h-[50px] object-contain" />
                   </div>
                   <h3 className="font-heading text-lg font-semibold text-foreground mb-2">
                     {s.title}
