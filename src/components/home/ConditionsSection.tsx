@@ -52,7 +52,13 @@ const ConditionsSection = () => {
               key={cond.title}
               className="bg-card border border-border rounded-xl p-5 text-center hover:shadow-md hover:border-primary/30 transition-all group flex flex-col items-center justify-center"
             >
-              <img src={cond.icon} alt={cond.title} className="w-10 h-10 mb-3 object-contain group-hover:scale-110 transition-transform" />
+              <img
+                src={cond.icon}
+                alt={cond.title}
+                className={`mb-3 object-contain group-hover:scale-110 transition-transform ${
+                  cond.title === "Workstation Setup Guidance" ? "w-14 h-14" : "w-10 h-10"
+                }`}
+              />
               <span className="text-sm font-medium text-foreground">{cond.title}</span>
             </div>
           ))}
