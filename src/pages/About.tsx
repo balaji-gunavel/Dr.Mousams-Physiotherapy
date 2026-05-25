@@ -10,7 +10,7 @@ const About = () => {
         <section className="bg-primary section-padding">
           <div className="container-narrow text-center">
             <h1 className="font-heading text-3xl md:text-5xl font-bold text-primary-foreground mb-4">
-              About Dr. Mousam Panchamia
+              About Dr. Mousam Shah, PT
             </h1>
             <p className="text-primary-foreground/85 max-w-2xl mx-auto text-lg">
               14+ years of dedicated physiotherapy practice, helping thousands of patients recover, move better, and live pain-free.
@@ -25,7 +25,7 @@ const About = () => {
                 <div className="w-36 h-36 rounded-full bg-primary/20 flex items-center justify-center mb-6">
                   <span className="font-heading text-5xl font-bold text-primary">MP</span>
                 </div>
-                <h2 className="font-heading text-2xl font-semibold text-foreground">Dr. Mousam Panchamia</h2>
+                <h2 className="font-heading text-2xl font-semibold text-foreground">Dr. Mousam Shah, PT</h2>
                 <p className="text-muted-foreground mt-1 mb-4">MPT · Orthopedic Rehabilitation Specialist</p>
                 <div className="grid grid-cols-2 gap-3 w-full">
                   {[
@@ -48,10 +48,10 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Dr. Mousam S. Panchamia is a highly experienced physiotherapist with over 14 years of clinical and leadership expertise in orthopaedic and rehabilitative care. She currently leads her own practice, Dr. Mousam's Physiotherapy Clinic in Bangalore, where she combines patient-centric treatment with strategic clinic management. Throughout her career, she has held key roles across reputed hospitals and healthcare organizations, including serving as Chief Physiotherapist, Head of Department, and Consultant, demonstrating strong capabilities in clinical decision-making, team mentorship, and operational leadership.
+                    Dr. Mousam Shah, PT is a highly experienced physiotherapist with over 14 years of clinical and leadership expertise in orthopaedic and rehabilitative care. She currently leads her own practice, Dr. Mousam's Physiotherapy Clinic in Bangalore, where she combines patient-centric treatment with strategic clinic management. Throughout her career, she has held key roles across reputed hospitals and healthcare organizations, including serving as Chief Physiotherapist, Head of Department, and Consultant, demonstrating strong capabilities in clinical decision-making, team mentorship, and operational leadership.
                   </p>
                   <p>
-                    In addition to her clinical work, Dr. Panchamia has significant experience in ergonomics, working with organizations to improve workplace safety, productivity, and injury prevention through assessments, training, and wellness initiatives. Her expertise spans musculoskeletal, neurological, and cardiopulmonary conditions, with a strong focus on rehabilitation and pain management.
+                    In addition to her clinical work, Dr. Mousam Shah, PT has significant experience in ergonomics, working with organizations to improve workplace safety, productivity, and injury prevention through assessments, training, and wellness initiatives. Her expertise spans musculoskeletal, neurological, and cardiopulmonary conditions, with a strong focus on rehabilitation and pain management.
                   </p>
                   <p>
                     With advanced qualifications in Orthopaedics and certification in Mulligan Therapy, she is committed to delivering evidence-based care and continuously enhancing patient outcomes through innovative techniques and holistic treatment approaches.
@@ -87,7 +87,7 @@ const About = () => {
         <section className="section-padding">
           <div className="container-narrow text-center">
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Why Patients Trust Dr. Mousam
+              Why Patients Trust Dr. Mousam Shah, PT
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
               {[

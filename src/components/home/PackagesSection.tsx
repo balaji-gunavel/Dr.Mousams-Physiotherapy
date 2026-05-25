@@ -15,7 +15,7 @@ const PackagesSection = () => {
         <div className="flex justify-center">
           <img
             src={packagesImage}
-            alt="Dr. Mousam's Physiotherapy Clinic packages and pricing"
+            alt="Dr. Mousam Shah, PT's Physiotherapy Clinic packages and pricing"
             className="w-full max-w-2xl rounded-2xl shadow-md border border-border object-contain"
           />
         </div>
