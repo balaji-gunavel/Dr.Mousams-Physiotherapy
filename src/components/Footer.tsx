@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img src={logo} alt="Dr. Mousam Shah, PT's Physiotherapy logo" className="h-12 w-auto object-contain bg-white rounded-md p-1" />
-              <h3 className="font-heading text-xl font-semibold">Dr. Mousam Shah, PT's Physiotherapy</h3>
+              <h3 className="font-heading text-xl font-semibold">Dr. Mousam's Physiotherapy</h3>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
               Trusted physiotherapy clinic in Bommanahalli, Bengaluru. 14+ years of expert care in pain relief, rehabilitation, and recovery.
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-primary-foreground/20 pt-6 text-center text-xs opacity-60">
-          © {new Date().getFullYear()} Dr. Mousam Shah, PT's Physiotherapy. All rights reserved.
+          © {new Date().getFullYear()} Dr. Mousam's Physiotherapy. All rights reserved.
         </div>
       </div>
     </footer>
