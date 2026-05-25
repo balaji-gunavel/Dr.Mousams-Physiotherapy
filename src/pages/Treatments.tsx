@@ -154,7 +154,7 @@ const Treatments = () => {
               Not Sure Which Treatment You Need?
             </h2>
             <p className="text-primary-foreground/85 max-w-lg mx-auto mb-6">
-              Book a consultation with Dr. Mousam for a thorough assessment and personalized treatment recommendation.
+              Book a consultation with Dr. Mousam Shah, PT for a thorough assessment and personalized treatment recommendation.
             </p>
             <Button variant="ctaWhite" size="xl" asChild>
               <a href="https://wa.me/919742839299?text=Hi%2C%20I%20would%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener noreferrer">

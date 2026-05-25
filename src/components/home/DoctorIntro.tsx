@@ -10,7 +10,7 @@ const DoctorIntro = () => {
             <div className="w-32 h-32 rounded-full bg-primary/20 flex items-center justify-center mb-4">
               <span className="font-heading text-4xl font-bold text-primary">MP</span>
             </div>
-            <h3 className="font-heading text-xl font-semibold text-foreground">Dr. Mousam Panchamia</h3>
+            <h3 className="font-heading text-xl font-semibold text-foreground">Dr. Mousam Shah, PT</h3>
             <p className="text-sm text-muted-foreground mt-1">MPT · Ortho Rehab Specialist</p>
           </div>
           <div>
@@ -18,10 +18,10 @@ const DoctorIntro = () => {
               Meet Your Physiotherapist
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Dr. Mousam S. Panchamia is a senior physiotherapist with 16+ years of expertise in orthopaedic rehabilitation, pain management, and ergonomics. As founder of Dr. Mousam’s Physiotherapy Clinic in Bangalore, she provides evidence-based care for musculoskeletal, neurological, and cardiopulmonary conditions, combining advanced clinical expertise, leadership experience, and specialized training in Orthopaedics and Mulligan Therapy.
+              Dr. Mousam Shah, PT is a senior physiotherapist with 16+ years of expertise in orthopaedic rehabilitation, pain management, and ergonomics. As founder of Dr. Mousam’s Physiotherapy Clinic in Bangalore, she provides evidence-based care for musculoskeletal, neurological, and cardiopulmonary conditions, combining advanced clinical expertise, leadership experience, and specialized training in Orthopaedics and Mulligan Therapy.
             </p>
             <Button variant="cta" size="lg" asChild>
-              <Link to="/about">Learn More About Dr. Mousam</Link>
+              <Link to="/about">Learn More About Dr. Mousam Shah, PT</Link>
             </Button>
           </div>
         </div>

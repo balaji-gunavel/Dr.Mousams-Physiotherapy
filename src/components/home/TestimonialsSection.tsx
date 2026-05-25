@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     name: "Ramesh K.",
-    text: "My back pain improved significantly within a few sessions. Dr. Mousam's approach is thorough and the exercises prescribed were very effective. Highly recommend.",
+    text: "My back pain improved significantly within a few sessions. Dr. Mousam Shah, PT's approach is thorough and the exercises prescribed were very effective. Highly recommend.",
     rating: 5,
   },
   {
@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     name: "Anand M.",
-    text: "After my ACL surgery, I was worried about recovery. Dr. Mousam guided me step by step with patience and expertise. I'm back to my active lifestyle now.",
+    text: "After my ACL surgery, I was worried about recovery. Dr. Mousam Shah, PT guided me step by step with patience and expertise. I'm back to my active lifestyle now.",
     rating: 5,
   },
   {

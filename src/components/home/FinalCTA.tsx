@@ -9,7 +9,7 @@ const FinalCTA = () => {
           Ready to Start Your Recovery?
         </h2>
         <p className="text-primary-foreground/85 max-w-lg mx-auto mb-8 text-lg">
-          Take the first step towards a pain-free life. Book your appointment with Dr. Mousam today.
+          Take the first step towards a pain-free life. Book your appointment with Dr. Mousam Shah, PT today.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button variant="ctaWhite" size="xl" asChild>

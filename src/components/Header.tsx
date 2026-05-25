@@ -22,7 +22,7 @@ const Header = () => {
         <Link to="/" className="flex items-center gap-2">
           <img src={logo} alt="Dr. Mousam's Physiotherapy logo" className="h-10 md:h-12 w-auto object-contain" />
           <div className="leading-tight">
-            <span className="font-heading font-semibold text-foreground text-sm md:text-base block">Dr. Mousam's</span>
+            <span className="font-heading font-semibold text-foreground text-sm md:text-base block">Dr. Mousam Shah, PT's</span>
             <span className="text-xs text-muted-foreground">Physiotherapy</span>
           </div>
         </Link>
