@@ -19,6 +19,7 @@ const Index = () => {
         <HeroSection />
         <TrustStrip />
         <ConditionsSection />
+        <PackagesSection />
         <TreatmentApproach />
         <DoctorIntro />
         <CredibilityRow />
