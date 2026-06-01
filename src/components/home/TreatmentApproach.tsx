@@ -53,7 +53,7 @@ const TreatmentApproach = () => {
 
         {/* Desktop: zig-zag flow */}
         <div className="hidden md:block">
-          <div className="grid grid-cols-12 gap-6">
+          <div className="grid grid-cols-12 gap-x-6 gap-y-16">
             {steps.map((step, i) => {
               const isEven = i % 2 === 0;
               // zig-zag: alternate column placement
