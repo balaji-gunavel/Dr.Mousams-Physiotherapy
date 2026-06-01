@@ -1,4 +1,4 @@
-import { ClipboardCheck, Search, FileText, Dumbbell, TrendingUp, ArrowRight, ArrowDown } from "lucide-react";
+import { ClipboardCheck, Search, FileText, Dumbbell, TrendingUp, ArrowDown, CornerDownRight, CornerDownLeft } from "lucide-react";
 
 const steps = [
   { icon: ClipboardCheck, title: "Detailed Assessment", desc: "Comprehensive evaluation of your condition, pain points, and movement patterns." },
@@ -53,7 +53,7 @@ const TreatmentApproach = () => {
 
         {/* Desktop: zig-zag flow */}
         <div className="hidden md:block">
-          <div className="grid grid-cols-12 gap-6">
+          <div className="grid grid-cols-12 gap-x-6 gap-y-16">
             {steps.map((step, i) => {
               const isEven = i % 2 === 0;
               // zig-zag: alternate column placement
@@ -81,25 +81,23 @@ const TreatmentApproach = () => {
                     </div>
                   </div>
 
-                  {/* Arrow connector to next step */}
+                  {/* Single-direction arrow pointing to the next step */}
                   {i < steps.length - 1 && (
                     <div
-                      className={`absolute top-1/2 ${isEven ? "right-0 translate-x-1/2" : "left-0 -translate-x-1/2"} -translate-y-1/2 pointer-events-none`}
+                      className={`absolute -bottom-8 ${isEven ? "right-6" : "left-6"} pointer-events-none flex items-center gap-2 text-accent`}
                       aria-hidden="true"
                     >
-                      <div className="flex items-center gap-1 text-accent/70">
-                        {isEven ? (
-                          <>
-                            <span className="block w-8 h-px bg-gradient-to-r from-transparent to-accent/60" />
-                            <ArrowRight className="w-5 h-5 animate-pulse" />
-                          </>
-                        ) : (
-                          <>
-                            <ArrowRight className="w-5 h-5 rotate-180 animate-pulse" />
-                            <span className="block w-8 h-px bg-gradient-to-l from-transparent to-accent/60" />
-                          </>
-                        )}
-                      </div>
+                      {isEven ? (
+                        <>
+                          <span className="text-[11px] font-semibold tracking-wider uppercase text-accent/80">Next</span>
+                          <CornerDownRight className="w-6 h-6 animate-pulse" strokeWidth={2.25} />
+                        </>
+                      ) : (
+                        <>
+                          <CornerDownLeft className="w-6 h-6 animate-pulse" strokeWidth={2.25} />
+                          <span className="text-[11px] font-semibold tracking-wider uppercase text-accent/80">Next</span>
+                        </>
+                      )}
                     </div>
                   )}
                 </div>
