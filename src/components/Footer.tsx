@@ -23,7 +23,6 @@ const Footer = () => {
                 { label: "Home", path: "/" },
                 { label: "About Doctor", path: "/about" },
                 { label: "Treatments", path: "/treatments" },
-                { label: "Reviews", path: "/reviews" },
                 { label: "Contact", path: "/contact" },
               ].map((item) => (
                 <Link key={item.path} to={item.path} className="text-sm opacity-80 hover:opacity-100 transition-opacity">
