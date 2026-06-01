@@ -13,7 +13,7 @@ const Footer = () => {
               <h3 className="font-heading text-xl font-semibold">Dr. Mousam's Physiotherapy</h3>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
-              Trusted physiotherapy clinic in Bommanahalli, Bengaluru. 14+ years of expert care in pain relief, rehabilitation, and recovery.
+              Trusted physiotherapy clinic in Bommanahalli, Bengaluru. 16+ years of expert care in pain relief, rehabilitation, and recovery.
             </p>
           </div>
           <div>
