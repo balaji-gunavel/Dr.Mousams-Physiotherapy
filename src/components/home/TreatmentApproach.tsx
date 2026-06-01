@@ -1,4 +1,4 @@
-import { ClipboardCheck, Search, FileText, Dumbbell, TrendingUp, ArrowRight, ArrowDown } from "lucide-react";
+import { ClipboardCheck, Search, FileText, Dumbbell, TrendingUp, ArrowDown, CornerDownRight, CornerDownLeft } from "lucide-react";
 
 const steps = [
   { icon: ClipboardCheck, title: "Detailed Assessment", desc: "Comprehensive evaluation of your condition, pain points, and movement patterns." },
