@@ -22,7 +22,7 @@ const HeroSection = () => {
             Expert Physiotherapy Care for Pain Relief & Recovery
           </h1>
           <p className="text-lg md:text-xl text-white mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.15s", textShadow: "0 1px 6px rgba(0, 0, 0, 0.4)" }}>
-            14+ years of experience helping patients recover from orthopedic injuries, chronic pain, posture-related issues, and post-surgery rehabilitation.
+            16+ years of experience helping patients recover from orthopedic injuries, chronic pain, posture-related issues, and post-surgery rehabilitation.
           </p>
           <div className="flex flex-wrap gap-3 animate-fade-in-up text-cyan-800 bg-transparent text-base" style={{ animationDelay: "0.3s" }}>
             <Button variant="ctaWhite" size="lg" asChild>

@@ -13,7 +13,7 @@ const About = () => {
               About Dr. Mousam Shah, PT
             </h1>
             <p className="text-primary-foreground/85 max-w-2xl mx-auto text-lg">
-              14+ years of dedicated physiotherapy practice, helping thousands of patients recover, move better, and live pain-free.
+              16+ years of dedicated physiotherapy practice, helping thousands of patients recover, move better, and live pain-free.
             </p>
           </div>
         </section>
@@ -32,7 +32,7 @@ const About = () => {
                     { icon: GraduationCap, text: "Master's in Physiotherapy" },
                     { icon: Shield, text: "Ortho Rehab Specialist" },
                     { icon: BadgeCheck, text: "Certified Ergonomist" },
-                    { icon: Award, text: "14+ Years Experience" },
+                    { icon: Award, text: "16+ Years Experience" },
                   ].map((item) => (
                     <div key={item.text} className="flex items-center gap-2 text-sm text-foreground bg-card rounded-lg p-3">
                       <item.icon className="w-4 h-4 text-primary shrink-0" />
@@ -48,7 +48,7 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Dr. Mousam Shah, PT is a highly experienced physiotherapist with over 14 years of clinical and leadership expertise in orthopaedic and rehabilitative care. She currently leads her own practice, Dr. Mousam's Physiotherapy Clinic in Bangalore, where she combines patient-centric treatment with strategic clinic management. Throughout her career, she has held key roles across reputed hospitals and healthcare organizations, including serving as Chief Physiotherapist, Head of Department, and Consultant, demonstrating strong capabilities in clinical decision-making, team mentorship, and operational leadership.
+                    Dr. Mousam Shah, PT is a highly experienced physiotherapist with over 16 years of clinical and leadership expertise in orthopaedic and rehabilitative care. She currently leads her own practice, Dr. Mousam's Physiotherapy Clinic in Bangalore, where she combines patient-centric treatment with strategic clinic management. Throughout her career, she has held key roles across reputed hospitals and healthcare organizations, including serving as Chief Physiotherapist, Head of Department, and Consultant, demonstrating strong capabilities in clinical decision-making, team mentorship, and operational leadership.
                   </p>
                   <p>
                     In addition to her clinical work, Dr. Mousam Shah, PT has significant experience in ergonomics, working with organizations to improve workplace safety, productivity, and injury prevention through assessments, training, and wellness initiatives. Her expertise spans musculoskeletal, neurological, and cardiopulmonary conditions, with a strong focus on rehabilitation and pain management.
