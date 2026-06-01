@@ -1,10 +1,45 @@
-import packagesImage from "@/assets/physiotherapy-packages.jpeg";
+import { Check, AlertTriangle } from "lucide-react";
+
+const packages = [
+  {
+    name: "Consultation",
+    sessions: "One-time",
+    price: 450,
+  },
+  {
+    name: "1 Session",
+    sessions: "Single session",
+    price: 450,
+  },
+  {
+    name: "7 Sessions",
+    sessions: "Complete within 10 working days",
+    originalPrice: 3150,
+    price: 3000,
+    discount: 7,
+  },
+  {
+    name: "10 Sessions",
+    sessions: "Complete within 15 working days",
+    originalPrice: 4500,
+    price: 4100,
+    discount: 10,
+    featured: true,
+  },
+  {
+    name: "15 Sessions",
+    sessions: "Complete within 20 working days",
+    originalPrice: 6750,
+    price: 5700,
+    discount: 15,
+  },
+];
 
 const PackagesSection = () => {
   return (
     <section className="section-padding bg-secondary/30">
       <div className="container-narrow">
-        <div className="text-center mb-10">
+        <div className="text-center mb-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">
             Physiotherapy Packages
           </h2>
@@ -12,14 +47,63 @@ const PackagesSection = () => {
             Transparent pricing with discounted multi-session packages tailored to your recovery journey.
           </p>
         </div>
-        <div className="flex justify-center">
-          <img
-            src={packagesImage}
-            alt="Dr. Mousam Shah, PT's Physiotherapy Clinic packages and pricing"
-            className="w-full max-w-2xl rounded-2xl shadow-md border border-border object-contain"
-          />
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+          {packages.map((pkg) => (
+            <div
+              key={pkg.name}
+              className={`relative w-full max-w-sm bg-card border rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all flex flex-col ${
+                pkg.featured ? "border-primary shadow-md" : "border-border"
+              }`}
+            >
+              {pkg.discount && (
+                <div className="absolute -top-3 right-4 bg-accent text-accent-foreground text-xs font-bold px-3 py-1 rounded-full shadow">
+                  {pkg.discount}% OFF
+                </div>
+              )}
+
+              <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+                {pkg.name}
+              </h3>
+
+              <div className="flex items-baseline gap-2 mb-1">
+                {pkg.originalPrice && (
+                  <span className="text-sm text-muted-foreground line-through">
+                    ₹{pkg.originalPrice.toLocaleString("en-IN")}
+                  </span>
+                )}
+                <span className="text-3xl font-bold text-primary">
+                  ₹{pkg.price.toLocaleString("en-IN")}
+                </span>
+              </div>
+
+              <p className="text-sm text-muted-foreground mb-5 flex items-center gap-1.5">
+                <Check className="w-4 h-4 text-accent shrink-0" />
+                {pkg.sessions}
+              </p>
+
+              {pkg.originalPrice && (
+                <p className="mt-auto text-xs text-accent font-medium bg-accent/10 rounded-md px-3 py-2">
+                  You save ₹{(pkg.originalPrice - pkg.price).toLocaleString("en-IN")}
+                </p>
+              )}
+            </div>
+          ))}
         </div>
-        <p className="mt-6 text-center text-sm text-muted-foreground italic">
+
+        <div className="mt-10 max-w-2xl mx-auto space-y-4">
+          <p className="text-center text-sm text-muted-foreground italic">
+            All days are considered as working days except Sunday.
+          </p>
+          <div className="flex items-center justify-center gap-2 bg-destructive/10 border border-destructive/30 rounded-lg px-4 py-3">
+            <AlertTriangle className="w-5 h-5 text-destructive shrink-0" />
+            <p className="text-sm md:text-base font-bold text-destructive text-center">
+              NO REFUND AVAILABLE ON PACKAGE CHARGES
+            </p>
+          </div>
+        </div>
+
+        <p className="mt-8 text-center text-base font-bold text-foreground">
           Contact us for personalized treatment recommendations and package guidance.
         </p>
       </div>
