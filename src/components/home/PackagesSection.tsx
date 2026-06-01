@@ -1,4 +1,4 @@
-import { Check, AlertTriangle } from "lucide-react";
+import { Check } from "lucide-react";
 
 const packages = [
   {
@@ -48,11 +48,13 @@ const PackagesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-          {packages.map((pkg) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 justify-items-center">
+          {packages.map((pkg, index) => (
             <div
               key={pkg.name}
-              className={`relative w-full max-w-sm bg-card border rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all flex flex-col ${
+              className={`relative w-full max-w-sm bg-card border rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all flex flex-col lg:col-span-2 ${
+                index === 3 ? "lg:col-start-2" : ""
+              } ${
                 pkg.featured ? "border-primary shadow-md" : "border-border"
               }`}
             >
@@ -91,16 +93,10 @@ const PackagesSection = () => {
           ))}
         </div>
 
-        <div className="mt-10 max-w-2xl mx-auto space-y-4">
+        <div className="mt-10 max-w-2xl mx-auto">
           <p className="text-center text-sm text-muted-foreground italic">
-            All days are considered as working days except Sunday.
+            All days are considered as working days except Sunday. No Refund Available On Package Charges.
           </p>
-          <div className="flex items-center justify-center gap-2 bg-destructive/10 border border-destructive/30 rounded-lg px-4 py-3">
-            <AlertTriangle className="w-5 h-5 text-destructive shrink-0" />
-            <p className="text-sm md:text-base font-bold text-destructive text-center">
-              NO REFUND AVAILABLE ON PACKAGE CHARGES
-            </p>
-          </div>
         </div>
 
         <p className="mt-8 text-center text-base font-bold text-foreground">
