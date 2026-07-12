@@ -5,8 +5,6 @@ import kneeIcon from "@/assets/knee.png";
 import fractureIcon from "@/assets/fracture.png";
 import kneeReplacementIcon from "@/assets/knee-replacement.png";
 import hipReplacementIcon from "@/assets/hip-replacement.png";
-import aclMeniscusIcon from "@/assets/acl-meniscus.png";
-import arthroscopyIcon from "@/assets/arthroscopy.png";
 import bellsPalsyIcon from "@/assets/bells-palsy.png";
 import strokeParkinsonsIcon from "@/assets/stroke-parkinsons.png";
 import spondylitisIcon from "@/assets/spondylitis.png";
