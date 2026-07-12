@@ -54,13 +54,13 @@ const services = [
   },
   {
     title: "ACL/Meniscus Repair Rehabilitation",
-    icon: aclMeniscusIcon,
+    icon: kneeIcon,
     desc: "Advanced rehabilitation programs for sports injuries and post-surgical recovery. Restore knee stability, agility, and performance through progressive therapy.",
   },
   {
     title: "Arthroscopy Rehabilitation",
-    icon: arthroscopyIcon,
-    desc: "Personalized recovery plans following minimally invasive joint surgeries. Reduce stiffness, improve movement, and regain normal joint function effectively.",
+    icon: shoulderIcon,
+    desc: "Personalized recovery plans following minimally invasive joint surgeries. Reduce stiffness, improve movement, and regain normal joint function effectively.
   },
   {
     title: "Bell's Palsy Care",
