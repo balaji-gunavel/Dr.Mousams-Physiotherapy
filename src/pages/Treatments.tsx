@@ -60,7 +60,7 @@ const services = [
   {
     title: "Arthroscopy Rehabilitation",
     icon: shoulderIcon,
-    desc: "Personalized recovery plans following minimally invasive joint surgeries. Reduce stiffness, improve movement, and regain normal joint function effectively.
+    desc: "Personalized recovery plans following minimally invasive joint surgeries. Reduce stiffness, improve movement, and regain normal joint function effectively.",
   },
   {
     title: "Bell's Palsy Care",
