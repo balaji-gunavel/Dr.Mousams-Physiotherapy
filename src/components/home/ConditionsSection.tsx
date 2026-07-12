@@ -5,8 +5,6 @@ import kneeIcon from "@/assets/knee.png";
 import fractureIcon from "@/assets/fracture.png";
 import kneeReplacementIcon from "@/assets/knee-replacement.png";
 import hipReplacementIcon from "@/assets/hip-replacement.png";
-import aclMeniscusIcon from "@/assets/acl-meniscus.png";
-import arthroscopyIcon from "@/assets/arthroscopy.png";
 import bellsPalsyIcon from "@/assets/bells-palsy.png";
 import strokeParkinsonsIcon from "@/assets/stroke-parkinsons.png";
 import spondylitisIcon from "@/assets/spondylitis.png";
@@ -23,8 +21,8 @@ const conditions = [
   { icon: fractureIcon, title: "Fracture Rehabilitation" },
   { icon: kneeReplacementIcon, title: "Total Knee Replacement Rehabilitation" },
   { icon: hipReplacementIcon, title: "Total Hip Replacement Rehabilitation" },
-  { icon: aclMeniscusIcon, title: "ACL/Meniscus Repair Rehabilitation" },
-  { icon: arthroscopyIcon, title: "Arthroscopy Rehabilitation" },
+  { icon: kneeIcon, title: "ACL/Meniscus Repair Rehabilitation" },
+  { icon: shoulderIcon, title: "Arthroscopy Rehabilitation" },
   { icon: bellsPalsyIcon, title: "Bell's Palsy Care" },
   { icon: strokeParkinsonsIcon, title: "Stroke/Parkinson's Rehabilitation" },
   { icon: spondylitisIcon, title: "Spondylitis Care" },

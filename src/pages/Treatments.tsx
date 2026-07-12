@@ -8,8 +8,6 @@ import kneeIcon from "@/assets/knee.png";
 import fractureIcon from "@/assets/fracture.png";
 import kneeReplacementIcon from "@/assets/knee-replacement.png";
 import hipReplacementIcon from "@/assets/hip-replacement.png";
-import aclMeniscusIcon from "@/assets/acl-meniscus.png";
-import arthroscopyIcon from "@/assets/arthroscopy.png";
 import bellsPalsyIcon from "@/assets/bells-palsy.png";
 import strokeParkinsonsIcon from "@/assets/stroke-parkinsons.png";
 import spondylitisIcon from "@/assets/spondylitis.png";
@@ -56,12 +54,12 @@ const services = [
   },
   {
     title: "ACL/Meniscus Repair Rehabilitation",
-    icon: aclMeniscusIcon,
+    icon: kneeIcon,
     desc: "Advanced rehabilitation programs for sports injuries and post-surgical recovery. Restore knee stability, agility, and performance through progressive therapy.",
   },
   {
     title: "Arthroscopy Rehabilitation",
-    icon: arthroscopyIcon,
+    icon: shoulderIcon,
     desc: "Personalized recovery plans following minimally invasive joint surgeries. Reduce stiffness, improve movement, and regain normal joint function effectively.",
   },
   {
