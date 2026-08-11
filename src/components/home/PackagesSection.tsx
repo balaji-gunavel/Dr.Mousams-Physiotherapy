@@ -94,6 +94,9 @@ const PackagesSection = () => {
         </div>
 
         <div className="mt-10 max-w-2xl mx-auto">
+          <p className="text-center text-sm text-foreground/80 mb-3">
+            Home Visit charges are different and based on location.
+          </p>
           <p className="text-center text-sm text-muted-foreground italic">
             All days are considered as working days except Sunday. No Refund Available On Package Charges.
           </p>
