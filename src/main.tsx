@@ -14,9 +14,11 @@ window.dataLayer = window.dataLayer || [];
 function gtag(...args: unknown[]) {
   window.dataLayer.push(args);
 }
+window.gtag = gtag;
 gtag("js", new Date());
 gtag("config", measurementId);
 
 createRoot(document.getElementById("root")!).render(<App />);
+
 
 
